@@ -10,7 +10,7 @@ const App = () => {
   const apiKey='8a427f92'
   useEffect(()=>{
     const fetchMovies=async()=>{
-      await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}`,{
+      await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}`,{
         method:'GET'
       })
       .then(async(res)=>{
